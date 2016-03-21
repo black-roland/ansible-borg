@@ -1,0 +1,7 @@
+---
+
+- name: Create /usr/local/bin
+  file: path=/usr/local/bin state=directory mode=0755
+
+- name: Download Borg Backup standalone binary
+  get_url: url={{ standalone_download_url }} dest=/usr/local/bin/borg mode=0755 force=yes

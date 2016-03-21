@@ -1,0 +1,7 @@
+---
+
+- include: archlinux.yml
+  when: ansible_os_family == 'Archlinux'
+
+- include: all.yml
+  when: ansible_os_family != 'Archlinux'

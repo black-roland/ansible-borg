@@ -1,0 +1,4 @@
+---
+
+- name: Install Borg Backup using pacman
+  pacman: name=borg state=latest update_cache=yes

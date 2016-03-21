@@ -1,0 +1,4 @@
+---
+
+standalone_version: 1.0.0
+standalone_download_url: "https://github.com/borgbackup/borg/releases/download/{{ standalone_version }}/borg-linux{{ ansible_userspace_bits }}"
