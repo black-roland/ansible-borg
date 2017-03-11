@@ -3,5 +3,8 @@
 - include: archlinux.yml
   when: ansible_os_family == 'Archlinux'
 
+- include: redhat.yml
+  when: ansible_os_family == 'RedHat'
+
 - include: all.yml
-  when: ansible_os_family != 'Archlinux'
+  when: ansible_os_family != 'Archlinux' and ansible_os_family != 'RedHat'

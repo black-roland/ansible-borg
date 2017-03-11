@@ -1,0 +1,4 @@
+---
+
+- name: Install Borg Backup using {{ ansible_pkg_mgr }}
+  action: "{{ ansible_pkg_mgr }} name=borgbackup state=latest"
